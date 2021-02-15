@@ -1,0 +1,41 @@
+@import '../../style/variables.css';
+
+.directive {
+    background-color: var(--bg_secundary);
+    margin-bottom: 1rem;
+    display: flex;
+    margin-right: 1rem;
+}
+
+.directive h1 {
+    font-family: inherit;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.1;
+    color: var(--article_primary);
+    margin-left: 2rem;
+}
+
+.directive h2 {
+    font-family: inherit;
+    font-size: 1rem;
+    color: var(--article_secundary);
+    margin-left: 2rem;
+}
+
+.directive p {
+    text-align: justify;
+    color: var(--article_tertiary);
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.directive span{
+    color: var(--article_email);
+    margin-left: 2rem;
+}
+
+.directive .pic img {
+    width: 170px;
+    height: 200px;
+}

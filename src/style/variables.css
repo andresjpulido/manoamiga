@@ -1,0 +1,15 @@
+:root {
+    --primary: #333333;
+    --secundary: #8E9CC6;
+    
+    --nav_secundary: #0F69B4;
+    --nav_primary: #337ab7;
+
+    --article_primary:#045282;
+    --article_secundary:#475156;
+    --article_tertiary: #7a8791;
+    --article_email: #0f69b4;
+
+    --bg_primary: #EFEFEF;
+    --bg_secundary: #FFF;    
+}

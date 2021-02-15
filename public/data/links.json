@@ -1,0 +1,11 @@
+[
+    {"name":"COVID-19-logo-stripe.svg", "title":"donaciones", "target":"https://covid19.govt.nz/alert-system/alert-level-3/"},
+    {"name":"donar.jpg", "title":"donaciones", "target":""},
+    {"name":"sugerencias.jpg", "title":"Sugerencias", "target":"contacto"},
+    {"name":"hiack.jpg", "title":"www.holaauckland.com", "target":"http://www.holaauckland.com/"},
+    {"name":"employment.png", "title":"www.employment.govt.nz", "target":"https://www.employment.govt.nz/"},
+    {"name":"cab.jpeg", "title":"www.cab.org", "target":"http://www.cab.org"},
+    {"name":"biblio.jpeg", "title":"Sugerencias", "target":"https://www.facebook.com/Biblioteca-Letras-Latinas-185448697248/"},
+    {"name":"latino.jpg", "title":"Independencia", "target":"https://www.icronox.com/la-independencia-de-los-paises-de-america-latina/"},
+    {"name":"webmail.png", "title":"Webmail", "target":"https://cpanel-002-mel.hostingww.com:2096/cpsess7089819657/3rdparty/roundcube/"}
+]

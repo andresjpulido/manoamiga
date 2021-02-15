@@ -1,0 +1,12 @@
+@import '../../style/variables.css';
+
+.followus h3 {
+    
+    margin-bottom: 1rem;
+    display: flex;
+    color: var(--primary)
+}
+
+.followus div {
+    background-color: var(--bg_secundary);
+}
