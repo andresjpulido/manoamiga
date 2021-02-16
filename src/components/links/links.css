@@ -12,13 +12,15 @@
 }
 
 
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
-    .links div {
-        width: 80%;
+    .links img {
+        width: 250px;
         margin: auto;
+        display: block;
     }
 }
 
@@ -45,6 +47,11 @@ and (max-device-width : 1024px) {
     .header {
         background-size: cover;
     }
+    .links img {
+        width: 150px;
+        margin: auto;
+        display: block;
+    }    
 }
 
 /* iPads (landscape) ----------- */

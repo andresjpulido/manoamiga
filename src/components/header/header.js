@@ -3,9 +3,8 @@ import { useTransition, animated, config } from 'react-spring'
 import './header.css'
 
 const slides = [
-    { id: 0, url: 'Portada1.jpg' },
-    { id: 1, url: 'Portada3.jpg' },
-    { id: 2, url: 'Portada4.jpg' },
+    { id: 0, url: 'Portada1.jpg' },    
+    { id: 1, url: 'Portada4.jpg' },
     { id: 2, url: 'Portada5.jpg' }
 ]
 
@@ -19,7 +18,7 @@ const Header = () => {
         config: config.molasses,
     })
     
-   useEffect(() => void setInterval(() => set(state => (state + 1) % 4), 4000), [])
+   useEffect(() => void setInterval(() => set(state => (state + 1) % 3), 4000), [])
 
     return transitions.map(({ item, props, key }) => (
         <animated.div

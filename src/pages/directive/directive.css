@@ -4,7 +4,6 @@
     background-color: var(--bg_secundary);
     margin-bottom: 1rem;
     display: flex;
-    margin-right: 1rem;
 }
 
 .directive h1 {

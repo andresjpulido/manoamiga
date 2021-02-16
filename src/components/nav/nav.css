@@ -1,7 +1,6 @@
 @import '../../style/variables.css';
 nav {
-    width: 80%;
-    margin: auto;
+    
 }
 
 nav ul {   
@@ -39,29 +38,85 @@ nav a:hover {
     border-bottom: .2rem solid var(--nav_secundary);
 }
 
-@media all and (max-width: 1000px) {
-    nav ul {
-        flex-wrap: wrap;
-    }
-    nav li {
-        flex: 1 1 50%;
-    }
-    nav .user {
-        flex: 1 1 33.33%;
-    }
+
+
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+   
+    
 }
 
-@media all and (max-width: 480px) {
-    nav li {
-        flex-basis: 100%;
-    }
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+   
+    
 }
 
-@media all and (max-width: 480px) {
-    nav li {
-        flex-basis: 100%;
-    }
-    nav .user {
-        flex-basis: 50%;
-    }
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+   
+    
 }
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+   
+    
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+   
+    
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+    
+    
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+    
+    
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+    
+    
+}
+
+
+
+
+
+
+
+ 
+ 
