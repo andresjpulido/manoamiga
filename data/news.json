@@ -1,0 +1,81 @@
+[
+
+    {
+        "image": "dance.jpeg",
+        "image_label": "Winter Warm Up",
+        "description": "Actividad para disfrutar en familia"
+    },
+
+    {
+        "image": "juventud_acumulada_abril_2021.jpg",
+        "image_label": "Tarde parisina",
+        "description": "Actividad para personas de mas de 60 anos"
+    },
+
+    {
+        "image": "lockdown.jpeg",
+        "image_label": "lockdown",
+        "description": "En el nivel de alerta 3, los viajes están restringidos. Solo puede viajar dentro de su área local para fines esenciales, como ir al trabajo, a la escuela o hacer compras. También puede viajar localmente para hacer ejercicio. Cualquier persona que viaje en transporte público debe usar algún tipo de máscara o protección facial. Las instalaciones públicas, incluidos los patios de comidas, los gimnasios, las bibliotecas, los museos y los cines, ahora están cerrados, e incluso el área de juegos del parque local está oficialmente fuera de los límites. Los eventos como las ceremonias de boda y los funerales ahora están restringidos a un máximo de 100 personas."
+    },
+
+    {
+        "image": "cursoingles.jpg",
+        "image_label": "Tarde parisina",
+        "description": "Para registrarte envianos un correo a manoamiganz@gmail.com."
+    },
+
+    {
+        "image": "juventudacumulada.jpg",
+        "image_label": "Juventud acumulada",
+        "description": "Invitamos a toda la comunidad hispana de adultos mayore que se unana a nuestro grupo."
+    }, 
+
+    {
+        "type":"text",
+        "title": "Anuncio importante",
+        "text": "Landlords no podrán aumentar los alquileres ni expulsar a sus inquilinos, excepto en situaciones muy específicas durante el cierre de cuatro semanas de Covid-19. El Gobierno aprobará hoy una legislación urgente para garantizar que los inquilinos no se queden sin hogar y sin un lugar para aislarse. La ministra de Vivienda, Megan Woods, dijo que también había una obligación para los inquilinos de no abusar de la situación. Una de las situaciones en las que un inquilino podría ser desalojado es si no paga el alquiler durante 60 días sin hacer un esfuerzo razonable para hacerlo.   Más tarde esta noche a las 11.59 pm Nueva Zelanda pasará al Nivel 4 de Alerta COVID-19 y permanecerá en un bloqueo de coronavirus durante las próximas cuatro semanas o hasta que el Primer Ministro levante el estado de alerta. Se requerirá que todo el personal se quede en casa. Estos son tiempos verdaderamente sin precedentes. Para todos nuestros migrantes Latinos un saludo y por favor estén atentos a lo que va sucediendo. Quédate en casa."
+    },
+    
+    {
+        "image": "mensaje_lockdown.jpeg",
+        "image_label": "Lockdown",
+        "description": ""
+    },
+
+    {
+        "image": "juventudacumuladaFeb.jpg",
+        "image_label": "juventud acumulada",
+        "description": ""
+    },
+
+    {
+        "image": "juventudAcumuladaDic.jpeg",
+        "image_label": "juventud acumulada",
+        "description": ""
+    },
+
+    {
+        "image": "asamblea.jpeg",
+        "image_label": "asamblea",
+        "description": ""
+    },
+
+    {
+        "type":"text",
+        "title": "ASAMBLE GENERAL 2019",
+        "text": "La junta directiva de Mano Amiga hace una extensiva invitación a la comunidad hispano hablante de Auckland y el país en general a que se unan a nuestro evento. Allí compartimos algunos platos de nuestra cultura hispana y se entregará un balance de actividades generadas durante el periodo 2019 igualmente se hace una invitación a que se vinculen nuevos socios para el fortalecimiento de nuestra organización."
+    },    
+
+    {
+        "image": "clasesingles.jpg",
+        "image_label": "clases ingles",
+        "description": ""
+    },
+
+    {
+        "image": "bingo.jpg",
+        "image_label": "bingo",
+        "description": ""
+    }
+
+]
