@@ -1,17 +1,71 @@
-.app {
-  width: 80%;
-  margin: auto;
+.app {  
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
 .app section {
   margin-right: 1rem;
 }
 
-section h2 {
+section h1 {
   color: var(--primary);
-  font-size: 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
+section h2 {
+  color: var(--primary);
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+section h3 {
+  color: var(--primary);
+  font-size: 1.3rem;
+  font-weight: bold;
+  
+}
+
+section h4 {
+  color: var(--primary);
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+form {
+  width: 100%;
+}
+
+input[type=text], input[type=email],textarea {
+  border-radius: .25rem;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: .3rem;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #DDDDDD;
+}
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+  box-shadow: 0 0 10px var(--nav_primary);
+  padding: 3px 0px 3px 3px;
+  margin: .3rem;
+  border: 1px solid var(--nav_primary);
+}
+
+.page {
+  flex: 8 1;
+}
+
+.aside {
+  flex: 2;
+}
 
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -19,10 +73,17 @@ section h2 {
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .app {
     width: 95%;
-    
+    margin-left: 1rem;
   }
   .app section {
     margin-right: 0rem;
+  }
+  .page {
+    flex: auto;
+  }
+  
+  .aside {
+    flex: auto;
   }
 }
 
@@ -59,7 +120,12 @@ section h2 {
 
 /* Desktops and laptops ----------- */
 
-@media only screen and (min-width: 1224px) {}
+@media only screen and (min-width: 1224px) {
+  .app {	 
+		margin-left: 12rem;
+		margin-right: 12rem;
+	}
+}
 
 /* Large screens ----------- */
 

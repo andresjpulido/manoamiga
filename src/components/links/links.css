@@ -1,16 +1,23 @@
-@import '../../style/variables.css';
-
 .links h3 {    
-    
     display: flex;
-    color: var(--primary)
+    color: var(--primary);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .links div {
     background-color: var(--bg_secundary);
     margin-bottom: 1rem;
+    border-bottom: 3px solid var(--tertiary);
 }
 
+.link-image {
+    width: -webkit-fill-available;
+}
+
+.link {
+    cursor: pointer;    
+}
 
 
 /* Smartphones (portrait and landscape) ----------- */

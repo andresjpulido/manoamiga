@@ -17,6 +17,17 @@
     text-align: center;
 }
 
+.about h2 {
+    font-family: inherit;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.1;
+    color: var(--article_primary);
+    margin-left: 2rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
 .about hr {
     margin-left: 2rem;
     margin-right: 2rem;
@@ -27,6 +38,7 @@
     margin-left: 2rem;
     margin-right: 2rem;
     text-align: justify;
+    line-height: 2rem;
 }
 
 .about img {

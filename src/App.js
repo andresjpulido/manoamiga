@@ -5,32 +5,35 @@ import About from './pages/about';
 import Contact from './pages/contact';
 import Directive from './pages/directive';
 import Gallery from './pages/gallery';
-import Nav from './components/nav';
+import BarNav from './components/barnav';
 import Header from './components/header';
 import Followus from './components/followus';
 import Footer from './components/footer';
-import Links from './components/links'
+import Links from './components/links';
+import Album from './pages/album';
+import Donations from './pages/donations'
 import './App.css';
 
 function App() {
 
   return (
     <BrowserRouter>
-      <Header />
-      <Nav />
-      <div className="app row">
-        
-        <section className="col-80">
-          <Route component={Home} path="/" exact />
+        <Header />
+        <BarNav />
+        <div className="app row">        
+        <section className="page">
+          <Route component={Home} path="/home" exact />
           <Route component={About} path="/about" exact />
           <Route component={Directive} path="/directive" exact />
           <Route component={Gallery} path="/gallery" exact />
           <Route component={Contact} path="/contact" exact />
+          <Route component={Album} path="/album/:idgallery/:idevent" exact />
+          <Route component={Donations} path="/donations" exact />
+          <Route component={Home} path="/" exact />
         </section>
-        <aside className="col-20"><Followus /><Links /></aside>
+        <aside className="aside"><Followus /><Links /></aside>
       </div>
-
-      <Footer />
+        <Footer />
     </BrowserRouter>
   );
 }

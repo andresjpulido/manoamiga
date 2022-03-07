@@ -3,7 +3,7 @@
 .contact {
     background-color: var(--bg_secundary);
     margin-bottom: 1rem;
-    display: flex;
+     
     padding: 2rem;
 }
 
@@ -27,24 +27,14 @@ label {
 .form-control {
     display: block;
     width: 100%; 
-    line-height: 1.42857143;
     color: #555;
     background-color: #fff;
-    background-image: none; 
-    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
-    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
-    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
-    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-    height: calc(1.5em + .75rem + 2px);
-    padding: .375rem .75rem;
+    background-image: none;     
+    height: calc(1.5em + .75rem + 2px);   
     font-size: 1rem;
     font-weight: 400;
-    line-height: 1.5;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    border-radius: .25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+    background-clip: padding-box;    
 }
 
 .btn-primary {
@@ -83,4 +73,14 @@ label {
 
 .form-group {
     margin-bottom: 15px;
+}
+
+.success {
+    color: var(--primary);
+    padding-bottom: 1rem;
+}
+
+.fail{
+    color: var(--error);
+    padding-bottom: 1rem;
 }

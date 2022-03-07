@@ -1,0 +1,26 @@
+@import '../../style/variables.css';
+
+.news {
+    background-color: var(--bg_secundary);
+    display: block;
+    padding: 2rem; 
+    font-size: .9rem;
+    color: var(--primary); 
+    text-align: justify;
+    border-bottom: 3px solid var(--tertiary);
+}
+
+.news img {
+    width: 80%;  
+    height: 80%;       
+}
+
+.news-title {
+    color: var(--nav_primary);
+    font-size: 1.3rem;
+}
+
+.news p {
+    margin-top: 1rem;
+    line-height: 1.5rem;
+}

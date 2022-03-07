@@ -33,23 +33,25 @@ const Directive = () => {
     return (
         <section>
 
-            <h2>DIRECTIVA</h2>
+            <h1>DIRECTIVA</h1>
 
             {
                 directives.map((directive, index) => {
                     return (
                         <article className="directive" key={index}>
-                            
-                            <div class="pic">
+
+                            <div className="pic">
                                 <img src={process.env.PUBLIC_URL + `/images/directives/${directive.photo}`} />
                             </div>
-                            <div>
-                                <h1>{directive.name}</h1>
-                                <h2>{directive.title}</h2>
+                            <div className="description">
+                                <h3>{directive.name}</h3>
+                                <h4>{directive.title}</h4>
                                 <p>{directive.description}</p>
-                                <span>
-                                    Mail: {directive.email}
-                                </span>
+                                <p className="right">
+                                    <span>
+                                        Mail: {directive.email}
+                                    </span>
+                                </p>
                             </div>
                         </article>
                     )

@@ -15,7 +15,7 @@ const About = () => {
 
             <article className="about">
                 <img src={people} alt="Acerca de nosotros" />
-                <h1>Nuestros Inicios</h1>
+                <h2>Nuestros Inicios</h2>
                 <hr />
                 <p>El grupo se inicio el año 2010, a raiz del terremoto de Concepción, Chile. Un grupo de mujeres por iniciativa de Marisol Valenzuela tuvieron una reunión profondos para ayudar a las familias damnificadas canalizando el dinero a través de la iglesia catolica. Asistieron señoras de diferentes partes de latinoamérica para colaborar en dicho evento. Se vendieron empanadas, panes chilenos etc. Fue un evento hermoso lleno de Solidaridad y cariño. Es asi como surge la idea de poder reunirse otra vez y pensar que podrían hacer para ayudar a los amigos latinos inmigrantes en NZ.</p>
                 <p>El grupo comenzo a tener forma e identificó sus objetivos y metas. Asi como la planificacion de diferentes actividades Eligieron su junta directiva y comenzaron a trabajar unidas reuniendose una vez al mes. Durante estos siete años se ayudo a un numero grande de personas de diferentes paises de habla hispana como Chile, Colombia, Argentina, Mexico y Brasil. En algunos casos con visitas, transporte, dinero, viveres, ropa, medicinas, tramites, etc.</p>

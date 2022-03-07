@@ -1,40 +1,119 @@
-@import '../../style/variables.css';
+
 
 .directive {
     background-color: var(--bg_secundary);
     margin-bottom: 1rem;
     display: flex;
+    border-bottom: 3px solid var(--tertiary);
 }
 
-.directive h1 {
-    font-family: inherit;
+.directive h3 {   
     font-size: 1.5rem;
-    font-weight: 500;
-    line-height: 1.1;
+    font-weight: normal; 
     color: var(--article_primary);
-    margin-left: 2rem;
 }
 
-.directive h2 {
-    font-family: inherit;
+.directive h4 {
     font-size: 1rem;
+    font-weight: normal;
     color: var(--article_secundary);
-    margin-left: 2rem;
+    line-height: 3rem; 
 }
 
 .directive p {
     text-align: justify;
-    color: var(--article_tertiary);
-    margin-left: 2rem;
+    color: var(--article_tertiary);   
     margin-right: 2rem;
+    line-height: 2rem;
+}
+
+p.right{
+    text-align: right;
 }
 
 .directive span{
-    color: var(--article_email);
-    margin-left: 2rem;
+    color: var(--article_email);    
+    font-size: .9rem;
 }
 
 .directive .pic img {
     width: 170px;
     height: 200px;
+}
+
+.pic {
+    padding: 1rem;
+    text-align: center;
+}
+
+.description {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+    .directive {
+        display: block;
+    }
+
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+     
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+     
+ 
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+     
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+     
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+     
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+     
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+     
 }

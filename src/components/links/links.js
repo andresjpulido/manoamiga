@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import './links.css'
+import { useHistory } from "react-router-dom";
 
 const Links = () => {
 
     const [linkList, setLinkList] = useState(null);
     const url = '/data/links.json';
+    let history = useHistory()
 
     useEffect(() => {
 
@@ -29,19 +31,33 @@ const Links = () => {
         );
     }
 
+    const goPage = (page)=>{        
+        history.push("/"+page);
+    }
+
     return (
         <article className="links">
             <h3>Enlaces de Inter&eacute;s</h3>
 
             {
-                linkList.map((item, index) => {
-                    return (
-                        <div key={index}>
-                            <a target="_blank" href={item.target}>
-                                <img src={process.env.PUBLIC_URL + `/images/banners/${item.name}`} alt={item.title} />
-                            </a>
-                        </div>
-                    )
+                linkList.filter(item => item.active).map((item, index) => {
+                    if (item.internal) {
+                        return (
+                            <div key={index} className="link">
+                                <div onClick={() => goPage(`${item.target}`)}>
+                                    <img src={process.env.PUBLIC_URL + `/images/banners/${item.name}`} alt={item.title} className="link-image" />
+                                    </div>
+                            </div>
+                        )
+                    } else {
+                        return (
+                            <div key={index}>
+                                <a target="_blank" href={item.target}>
+                                    <img src={process.env.PUBLIC_URL + `/images/banners/${item.name}`} alt={item.title} className="link-image" />
+                                </a>
+                            </div>
+                        )
+                    }
                 })
             }
 
