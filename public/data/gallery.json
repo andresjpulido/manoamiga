@@ -151,6 +151,14 @@
         "name":"Juventud Acumulada",
         "events":[
             {
+                "name":"Galeria de fotos 2022",
+                "images":[
+                    {"src":"jac/2022/01.jpeg"},
+                    {"src":"jac/2022/02.jpeg"},
+                    {"src":"jac/2022/03.jpeg"}
+                ]
+            },
+            {
                 "name":"Galeria de fotos 2020",
                 "images":[
                     {"src":"jac/2020/juventud1.jpeg"},
