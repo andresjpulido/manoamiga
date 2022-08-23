@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route } from "react-router-dom";
 import Home from './pages/home';
 import About from './pages/about';
 import Contact from './pages/contact';
@@ -17,7 +17,7 @@ import './App.css';
 function App() {
 
   return (
-    <BrowserRouter>
+    <HashRouter hashType="noslash">
         <Header />
         <BarNav />
         <div className="app row">        
@@ -34,7 +34,7 @@ function App() {
         <aside className="aside"><Followus /><Links /></aside>
       </div>
         <Footer />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

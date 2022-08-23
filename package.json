@@ -2,7 +2,7 @@
   "name": "manoamiga",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://manoamiga.andresjpulido.com",
+  "homepage": "http://manoamiga.co.nz",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
     "@fortawesome/free-brands-svg-icons": "^5.15.2",
@@ -15,6 +15,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
+    "react-router-hash-history": "^0.2.3",
     "react-scripts": "4.0.2",
     "react-spring": "^8.0.27",
     "web-vitals": "^1.0.1"
