@@ -45,8 +45,7 @@ nav > ul > li:hover {
 }
 
 .menu-mobile button {
-	background-color: var(--bg_primary);
-	border: 0px;
+	 
 }
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -56,24 +55,34 @@ nav > ul > li:hover {
 		display: flex;
 		justify-content: space-between;
 		width: 100%;
+		background: white; 
+		align-items: center;
+		border: 1px var(--tertiary)  solid; 
+		height: 56px;
+	}
 
-		border-bottom: 1px var(--nav_secundary) solid;
+	.menu-mobile button{
+		background-color: transparent;
+		border: 1px white solid;
+		border-left: 1px var(--tertiary) solid; 
 	}
 
 	.menu-mobile-title {
-		color: var(--primary);
+		color:   #c43ca9  ;
+		font-size: 1.3rem; 
 		display: inline-block;
-		font-weight: bolder;
+		font-weight: regular;
 		margin: auto;
+		font-family: 'Shantell Sans';
 	}
 
 	.menu-mobile-icon {
-		border: 1px rgb(30, 30, 30) solid;
+		 
 		padding: 10px;
 		display: inline-block;
 	}
 
-	nav {
+	nav { 
 		position: relative;
 		display: inline-block;
 		padding: 0px;
@@ -94,7 +103,7 @@ nav > ul > li:hover {
 		width: 100%;
 		left: -100%;
 		z-index: 1;
-		 
+		
 		height: 250px;
 		flex-direction: column;
 		list-style-type: none;
@@ -110,7 +119,7 @@ nav > ul > li:hover {
 
 	.dropdown-child li.active-item {
 		border-left: 1px var(--nav_primary) solid;
-		border-right: 1px var(--nav_primary) solid;
+		border: 1px var(--nav_primary) solid;
 	}
 
 	.dropdown-child.active {
@@ -123,6 +132,7 @@ nav > ul > li:hover {
 		z-index: 1;
 		align-content: center;
 		padding-left: 0px;
+		border : 1px var(--primary) solid;
 	}
 
 	nav > ul {
@@ -163,8 +173,8 @@ nav > ul > li:hover {
 @media only screen and (min-width: 1224px) {
 
 	nav > ul {	 
-		margin-left: 12rem;
-		margin-right: 12rem;
+		margin-left: 6rem;
+		margin-right: 6rem;
 	}
 }
 

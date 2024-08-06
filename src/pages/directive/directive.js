@@ -37,6 +37,7 @@ const Directive = () => {
 
             {
                 directives.map((directive, index) => {
+                    console.log(directive.email)
                     return (
                         <article className="directive" key={index}>
 
@@ -48,9 +49,13 @@ const Directive = () => {
                                 <h4>{directive.title}</h4>
                                 <p>{directive.description}</p>
                                 <p className="right">
-                                    <span>
-                                        Mail: {directive.email}
-                                    </span>
+                                {
+                                    (directive.email !== undefined) && <span>
+                                    Mail: {directive.email} 
+                                    
+                                </span>
+                                }
+                                    
                                 </p>
                             </div>
                         </article>

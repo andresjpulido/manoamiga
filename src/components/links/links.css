@@ -5,14 +5,18 @@
     margin-bottom: 1rem;
 }
 
-.links div {
+.links > div {
     background-color: var(--bg_secundary);
-    margin-bottom: 1rem;
-    border-bottom: 3px solid var(--tertiary);
+    margin-bottom: 1rem; 
+    border: 3px solid white;
+    border-radius: 10px;
+    
 }
 
-.link-image {
-    width: -webkit-fill-available;
+.link-image { 
+    width: -webkit-fill-available;      
+    width: fill-available;
+    width: -moz-available;   
 }
 
 .link {

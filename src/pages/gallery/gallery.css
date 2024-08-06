@@ -29,7 +29,7 @@
 
 .gallery .pic img {
     width: 320px;
-     
+    object-position: 50% top;
 }
 
 .gallery .description {
@@ -47,8 +47,8 @@
 .gallery-item {
     color: var(--article_primary);
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 1.3rem;
-    font-weight: 100;
+    font-size: 1.1rem;
+    font-weight: 200;
     line-height: 2;
     cursor: pointer;
 }

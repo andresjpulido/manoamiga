@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './contact.css'
 
 const Contact = () => {
 
-    const url = 'http://manoamiga.nz/contacto2.php';
+    const url = 'https://manoamiga.nz/echo.php';
 
     const [success, setsuccess] = useState(true);
     const [isprocessing, setprocessing] = useState(false);
@@ -14,10 +14,13 @@ const Contact = () => {
 
         setprocessing(true);
         setshowresponse(false);
-
+ 
+        const formData2 = new FormData(formData.target);
+     
         const res = await fetch(url, {
             method: 'POST',
-            body: formData
+            body: formData2 ,
+             
         }).catch((error) => {
             setsuccess(false)
             setprocessing(false)
@@ -25,10 +28,11 @@ const Contact = () => {
         });
 
         if (res) {
-            const data = await res.json();
+            const data = await res.text();
             setsuccess(true);
             setprocessing(false);
             setshowresponse(true);
+            console.log(data)
         }
     }
 
@@ -51,7 +55,7 @@ const Contact = () => {
                 isprocessing ?
                     <div>Procesando la solicitud ...</div>
                     :
-                    <form role="form" id="Formulario" onSubmit={handleSubmit}>
+                    <form id="Formulario" onSubmit={handleSubmit}>
                         <div className="form-group">
                             <label className="control-label" htmlFor="Nombre">Nombres</label>
                             <input type="text" className="form-control" id="Nombre" name="Nombre" placeholder="Introduzca su nombre" required autoFocus />

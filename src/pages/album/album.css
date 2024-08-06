@@ -16,6 +16,7 @@
 	min-width: 100%;
 	object-fit: cover;
 	vertical-align: bottom;
+  object-position: top;
 }
 /* Smartphones (portrait and landscape) ----------- */
 

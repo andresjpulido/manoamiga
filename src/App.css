@@ -67,6 +67,15 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
   flex: 2;
 }
 
+.news-links{
+  list-style: none;
+  margin-top: .5rem;
+}
+
+.news-link {
+  color: var(--nav_primary);
+  text-decoration: none;
+}
 
 /* Smartphones (portrait and landscape) ----------- */
 
@@ -122,8 +131,8 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 
 @media only screen and (min-width: 1224px) {
   .app {	 
-		margin-left: 12rem;
-		margin-right: 12rem;
+		margin-left: 6rem;
+		margin-right: 6rem;
 	}
 }
 

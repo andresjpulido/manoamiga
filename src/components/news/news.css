@@ -7,12 +7,16 @@
     font-size: .9rem;
     color: var(--primary); 
     text-align: justify;
-    border-bottom: 3px solid var(--tertiary);
+    margin-top: 1rem;
+    border-radius: 10px;
 }
 
 .news img {
     width: 80%;  
     height: 80%;       
+    display: block;
+    margin: auto;
+    border-radius: 5px;
 }
 
 .news-title {

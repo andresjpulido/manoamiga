@@ -8,6 +8,7 @@
 
 .followus div {
 	background-color: var(--bg_secundary);
+
 }
 
 .facebook {
@@ -15,7 +16,7 @@
 	display: flex;
 	padding: .5rem;
 	background-color: var(--bg_primary);
-	border-bottom: 3px solid var(--tertiary);
+	 border-radius: 10px;
 	margin-top: 1rem;
 }
 

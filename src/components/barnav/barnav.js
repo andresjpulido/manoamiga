@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import './barnav.css'
-import icon from '../../assets/images/menu-icon.png'
-import icon_closed from '../../assets/images/menu-icon-close.png'
+import icon from '../../assets/images/opened.svg'
+import icon_closed from '../../assets/images/closed.svg'
+import logo from '../../assets/images/manoamigalogo2.webp'
+ 
 import { useHistory } from "react-router-dom";
 
 export default function Nav() {
@@ -25,7 +27,10 @@ export default function Nav() {
 
         <nav>
             <div className="menu-mobile">
-                <div className="menu-mobile-title">Mano amiga</div>
+                 
+                <div className="menu-mobile-title">
+                    <img src={logo} height={56}/>
+                </div>
                 <button className="menu-mobile-icon" onClick={updateIsMenuOpen}>
                     <img src={isMenuOpen ? icon_closed : icon} width="25px" alt="Menu" />
                 </button>

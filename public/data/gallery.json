@@ -1,4 +1,45 @@
 [
+    { 
+        "image":{
+            "src":"fiestainfantil/2024/fiestainfantil1.webp",
+            "title":"Fiesta infantil"
+        },
+        "name":"Fiesta infantil",
+        "date":"05 Mayo de 2024",
+        "events":[
+            {
+                "id":1,
+                "name":"Galeria de fotos 2024",
+                "images":[
+                    {"src":"fiestainfantil/2024/fiestainfantil1.webp"},
+                    {"src":"fiestainfantil/2024/fiestainfantil2.webp"},
+                    {"src":"fiestainfantil/2024/fiestainfantil3.webp"},
+                    {"src":"fiestainfantil/2024/fiestainfantil4.webp"}
+                ]
+            }
+        ]
+    },
+    { 
+        "image":{
+            "src":"solidaridad/2024/06.webp",
+            "title":"Donación de alimentos"
+        },
+        "name":"Donación de alimentos",
+        "date":"01 Abril de 2024",
+        "events":[
+            {
+                "id":1,
+                "name":"Galeria de fotos 2024",
+                "images":[
+                    {"src":"solidaridad/2024/01.webp"},
+                    {"src":"solidaridad/2024/02.webp"},
+                    {"src":"solidaridad/2024/03.webp"},
+                    {"src":"solidaridad/2024/04.webp"},
+                    {"src":"solidaridad/2024/05.webp"}
+                ]
+            }
+        ]
+    },
     {
         "id":1,
         "image":{
@@ -150,6 +191,46 @@
         },
         "name":"Juventud Acumulada",
         "events":[
+            {
+                "name":"Paseo en jardínes de Hamilton 2023",
+                "images":[
+                    {"src":"jac/2023/01.webp"},
+                    {"src":"jac/2023/02.webp"},
+                    {"src":"jac/2023/03.webp"},
+                    {"src":"jac/2023/04.webp"},
+                    {"src":"jac/2023/05.webp"},
+                    {"src":"jac/2023/06.webp"} 
+                ]
+            },
+            {
+                "name":"Seminario para adultos mayores latino 2023",
+                "images":[
+                    {"src":"jac/2023/s01.webp"},
+                    {"src":"jac/2023/s02.webp"},
+                    {"src":"jac/2023/s03.webp"},
+                    {"src":"jac/2023/s04.webp"},
+                    {"src":"jac/2023/s05.webp"} 
+                ]
+            },
+            {
+                "name":"Paseo a Devonport 2023",
+                "images":[
+                    {"src":"jac/2023/paseodevonport.webp"} 
+                ]
+            },
+            {
+                "name":"Bienvenida a la primavera 2022",
+                "images":[
+                    {"src":"jac/2022/p01.webp"},
+                    {"src":"jac/2022/p02.webp"},
+                    {"src":"jac/2022/p03.webp"},
+                    {"src":"jac/2022/p04.webp"},
+                    {"src":"jac/2022/p05.webp"},
+                    {"src":"jac/2022/p06.webp"},
+                    {"src":"jac/2022/p07.webp"},
+                    {"src":"jac/2022/p08.webp"}
+                ] 
+            },
             {
                 "name":"Galeria de fotos 2022",
                 "images":[

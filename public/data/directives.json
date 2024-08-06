@@ -1,8 +1,30 @@
 [
-    {"name":"Norma Schwenke Cortes", "photo":"Norma.jpg", "title":"Presidenta", "description":"Norma Schwenke Cortes, chilena, trabajadora social, celebrante de matrimonios en NZ y co-fundadora de Mano Amiga. Cree profundamente en que las organizaciones sociales son un real aporte para el bienestar y felicidad de las personas.", "email":"nschwenke@manoamiga.nz"},
-    {"name":"Joys Florez Lozano", "photo":"joys.jpg", "title":"Vicepresidenta", "description":"Soy de Colombia, donde tuve la oportunidad de ejercer como médico general. Me encanta ser parte de organizaciones para poder brindar apoyo, ser solidaria, respetuosa, proactiva y amable son mis herramientas para compartir, se las dificultades que se pueden presentar al llegar a otro país. Amo NZ, deseo aportar con mis habilidades para lograr los objetivos de Mano Amiga.", "email":"joys.florez@manoamiga.nz"},
-    {"name":"Hector Gomez", "photo":"tesorera.jpg", "title":"Tesorero", "description":"", "email":"hector.gomez@manoamiga.nz"},
-    {"name":"Ronny Acosta Urquijo", "photo":"ronny.jpg", "title":"Secretario", "description":"Originalmente de Colombia, Ronny reside en Auckland hace 13 años. Disfruta compartir con su hijo Santiago y amigos de momentos cargados con cultura Latina. Experiencia profesional en Gerencia de Operaciones y Proyectos principalmente en el área logística – industria Lácteos y Aceites. Dedica parte de su tiempo personal a trabajar con organizaciones sin ánimo de lucro con causas sociales; es actualmente Secretario de Mano Amiga y Mentor para Upside New Zealand.", "email":"ronny.gomez@manoamiga.nz"},
-    {"name":"Natalia Troncoso", "photo":"natalia.jpg", "title":"Encargada de Salud  mental", "description":"Natalia Troncoso, psicologa  chilena dedicada al trabajo clinico-comunitario. Experiencia por mas de 10 años con niños y adolescentes, asi tambien en tematicas de violencia de genero.", "email":"natalia.troncoso@manoamiga.nz"}
+  {
+    "name": "Norma Schwenke Cortes",
+    "photo": "Norma.jpg",
+    "title": "Presidenta",
+    "description": "Norma Schwenke Cortes, chilena, trabajadora social, celebrante de matrimonios en NZ y co-fundadora de Mano Amiga. Cree profundamente en que las organizaciones sociales son un real aporte para el bienestar y felicidad de las personas."
     
+  },
+  {
+    "name": "Ronny Acosta Urquijo",
+    "photo": "ronny.jpg",
+    "title": "Tesorero",
+    "description": "Originalmente de Colombia, Ronny reside en Auckland hace 13 años. Disfruta compartir con su hijo Santiago y amigos de momentos cargados con cultura Latina. Experiencia profesional en Gerencia de Operaciones y Proyectos principalmente en el área logística – industria Lácteos y Aceites. Dedica parte de su tiempo personal a trabajar con organizaciones sin ánimo de lucro con causas sociales; es actualmente Secretario de Mano Amiga y Mentor para Upside New Zealand."
+     
+  },
+  {
+    "name": "Natalia Troncoso",
+    "photo": "natalia.jpg",
+    "title": "Vicepresidenta",
+    "description": "Natalia Troncoso, psicologa  chilena dedicada al trabajo clinico-comunitario. Experiencia por mas de 10 años con niños y adolescentes, asi tambien en tematicas de violencia de genero."
+     
+  },
+  {
+    "name": "Claudia Molina",
+    "photo": "claudiaMolina.webp",
+    "title": "Secretaria",
+    "description": "Comunicadora social y periodista colombiana, lleva nueve años viviendo en Nueva Zelanda, es profesora de español para niños y adultos y estudiante de Educación para la Primera Infancia. \n Está convencida de que las redes de apoyo entre la comunidad son una herramienta muy valiosa para todos los inmigrantes y es por eso que participa activamente en los diferentes programas de Mano Amiga."
+     
+  }
 ]

@@ -44,7 +44,7 @@ const Gallery = () => {
                     return (
                         <article className="gallery" key={galleryindex}>
                             <div className="pic">
-                                <img src={process.env.PUBLIC_URL + `/images/gallery/${galleryItem.image.src}`} alt={galleryItem.image.title} />
+                                <img src={process.env.PUBLIC_URL + `/images/gallery/${galleryItem.image.src}`} loading="lazy" decoding="async" alt={galleryItem.image.title} />
                             </div>
                             <div className="description">
                                 <span className="meta">{galleryItem.date}</span>
