@@ -1,0 +1,38 @@
+---
+const { directives, pagetitle, lang,  volunteerstitle, volunteersdescription } = Astro.props;
+---
+
+<section class="mx-4 md:mx-0">
+    <h1 class="font-semibold my-2">{pagetitle}</h1>
+
+    {
+      directives?.map((directive:any, index:any) => {
+        
+        return (
+        <article class="flex flex-row flex-wrap md:flex-nowrap justify-center gap-4 bg-bgsecondary p-4 my-4 border-b-4 border-nine">
+           
+            <div class="md:flex-none md:w-1/4 ">
+              <img src={`/images/directives/${directive.photo}`} style="width: 170px; height: 200px; max-width: none;"/>
+            </div>
+
+            <div class="md:grow">
+              <h3 class="text-article_primary text-2xl px-8 pb-2">{directive.name}</h3>
+              <h4 class="text-article_secundary text-base font-light px-8">{lang==='en'?directive.title:directive.title_es}</h4>
+              <p class="text-article_tertiary text-base font-light leading-loose px-8 py-2">{lang==='en'?directive.description:directive.description_es}</p>
+              <p class="text-article_tertiary right">
+                {directive.email !== undefined && (
+                  <span class="text-article_email">Mail: {directive.email}</span>
+                )}
+              </p>
+            </div>
+          </article>
+        );
+      })
+    }
+
+  <article class="flex flex-col flex-wrap md:flex-nowrap justify-center gap-4 bg-bgsecondary p-4 my-4 border-b-4 border-nine">
+    <h2 class="text-article_primary text-2xl px-8 pb-2">{volunteerstitle}</h2>
+    <img src="/images/directives/voluntariosManoAmiga.jpg" alt={`${volunteerstitle} Mano Amiga`}>
+    <p class="text-article_tertiary text-base font-light leading-loose pb-8">{volunteersdescription}</p>
+  </article>
+</section>

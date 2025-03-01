@@ -1,0 +1,394 @@
+[
+    { 
+        "image":{
+            "src":"fiestainfantil/2024/fiestainfantil1.webp",
+            "title":"Children's party",
+            "title_es":"Fiesta infantil"
+        },
+        "name":"Children's party",
+        "name_es":"Fiesta infantil",
+        "date":"05 May 2024",
+        "date_es":"05 Mayo de 2024",
+        "events":[
+            {
+                "id":0,
+                "name":"Photo gallery 2024",
+                "name_es":"Galeria de fotos 2024",
+                "images":[
+                    {"src":"fiestainfantil/2024/fiestainfantil1.webp"},
+                    {"src":"fiestainfantil/2024/fiestainfantil2.webp"},
+                    {"src":"fiestainfantil/2024/fiestainfantil3.webp"},
+                    {"src":"fiestainfantil/2024/fiestainfantil4.webp"}
+                ],
+                "comments":[],
+                "date":""
+            }
+        ]
+    },
+    { 
+        "image":{
+            "src":"solidaridad/2024/06.webp",
+            "title":"Food donation",
+            "title_en":"Donación de alimentos"
+        },
+        "name":"Food donation",
+        "name_es":"Donación de alimentos",
+        "date":"01 April 2024",
+        "date_es":"01 Abril de 2024",
+        "events":[
+            {
+                "id":0,
+                "name":"Photo gallery 2024",
+                "name_es":"Galeria de fotos 2024",
+                "images":[
+                    {"src":"solidaridad/2024/01.webp"},
+                    {"src":"solidaridad/2024/02.webp"},
+                    {"src":"solidaridad/2024/03.webp"},
+                    {"src":"solidaridad/2024/04.webp"},
+                    {"src":"solidaridad/2024/05.webp"}
+                ],
+                "comments":[],
+                "date":""
+            }
+        ]
+    },
+    {
+        "id":1,
+        "image":{
+            "src":"bingo.jpeg",
+            "title":"Bingo"
+        },
+        "name":"Galeria Bingos",
+        "name_es":"Galeria Bingos",
+        "date":"11 May 2016",
+        "date_es":"11 de Mayo de 2016",
+        "events":[
+            {
+                "id":0,
+                "name":"Photo gallery 2019",
+                "name_es":"Galeria de fotos 2019",
+                "images":[
+                    {"src":"bingo/2019/bingo1.jpg"},
+                    {"src":"bingo/2019/bingo2.jpg"},
+                    {"src":"bingo/2019/bingo3.jpg"},
+                    {"src":"bingo/2019/bingo4.jpg"},
+                    {"src":"bingo/2019/bingo5.jpg"},
+                    {"src":"bingo/2019/bingo6.jpg"},
+                    {"src":"bingo/2019/bingo7.jpg"},
+                    {"src":"bingo/2019/bingo8.jpg"}
+                ],
+                "comments":[],
+                "date":""
+            },
+            {
+                "id":1,
+                "name":"Photo gallery 2018",
+                "name_es":"Galeria de fotos 2018",
+                "images":[
+                    {"src":"bingo/2018/b1.jpg"},
+                    {"src":"bingo/2018/b2.jpg"},
+                    {"src":"bingo/2018/b3.jpg"},
+                    {"src":"bingo/2018/b4.jpg"},
+                    {"src":"bingo/2018/b5.jpg"},
+                    {"src":"bingo/2018/b6.jpg"}
+                ],
+                "comments":[],
+                "date":""
+            },
+            {
+                "id":2,
+                "name":"Photo gallery 2017",
+                "name_es":"Evento solidario 2017",
+                "images":[
+                    {"src":"bingo/2017/IMG_1.JPG"},
+                    {"src":"bingo/2017/IMG_2.JPG"},
+                    {"src":"bingo/2017/IMG_3.JPG"},
+                    {"src":"bingo/2017/IMG_4.JPG"},
+                    {"src":"bingo/2017/IMG_5.JPG"},
+                    {"src":"bingo/2017/IMG_6.JPG"},
+                    {"src":"bingo/2017/IMG_7.JPG"},
+                    {"src":"bingo/2017/IMG_8.JPG"},
+                    {"src":"bingo/2017/IMG_9.JPG"},
+                    {"src":"bingo/2017/IMG_10.JPG"},
+                    {"src":"bingo/2017/IMG_11.JPG"},
+                    {"src":"bingo/2017/IMG_12.JPG"},
+                    {"src":"bingo/2017/IMG_13.JPG"},
+                    {"src":"bingo/2017/IMG_14.JPG"},
+                    {"src":"bingo/2017/IMG_15.JPG"},
+                    {"src":"bingo/2017/IMG_16.JPG"},
+                    {"src":"bingo/2017/IMG_17.JPG"},
+                    {"src":"bingo/2017/IMG_18.JPG"},
+                    {"src":"bingo/2017/IMG_19.JPG"},
+                    {"src":"bingo/2017/IMG_20.JPG"},
+                    {"src":"bingo/2017/IMG_21.JPG"},
+                    {"src":"bingo/2017/IMG_22.JPG"},
+                    {"src":"bingo/2017/IMG_23.JPG"},
+                    {"src":"bingo/2017/IMG_24.JPG"},
+                    {"src":"bingo/2017/IMG_25.JPG"}
+                ],
+                "comments":[],
+                "date":""
+            }        
+        ]
+    }, 
+    {
+        "image":{
+            "src":"fundraiser.jpeg",
+            "title":"Fundraiser For Perú",
+            "title_es":"Fundraiser For Perú"
+        },
+        "name":"Fundraiser For Perú",
+        "name_es":"Fundraiser For Perú",
+        "events":[
+            {
+                "id":0,
+                "name":"Photo gallery",
+                "name_es":"Galeria de fotos",
+                "images":[ 
+                    {"src":"fundriser/10.jpeg"},
+                    {"src":"fundriser/11.jpeg"},
+                    {"src":"fundriser/12.jpeg"},
+                    {"src":"fundriser/13.jpeg"},
+                    {"src":"fundriser/14.jpeg"},
+                    {"src":"fundriser/15.jpeg"},
+                    {"src":"fundriser/16.jpeg"},
+                    {"src":"fundriser/17.jpeg"},
+                    {"src":"fundriser/18.jpeg"},
+                    {"src":"fundriser/20.jpeg"},
+                    {"src":"fundriser/23.jpeg"},
+                    {"src":"fundriser/f1.jpeg"},
+                    {"src":"fundriser/f2.jpeg"},
+                    {"src":"fundriser/f3.jpeg"},
+                    {"src":"fundriser/f4.jpeg"},
+                    {"src":"fundriser/f5.jpeg"},
+                    {"src":"fundriser/f6.jpeg"},
+                    {"src":"fundriser/f7.jpeg"},
+                    {"src":"fundriser/f8.jpeg"},
+                    {"src":"fundriser/f9.jpeg"}
+                ],
+                "comments": [],
+                "date": ""
+            }
+        ]
+    },    
+    {
+        "image":{
+            "src":"boys_e.jpg",
+            "title":"Manitos Amigas",
+            "title_es":"Manitos Amigas"
+        },
+        "name":"Manitos Amigas",
+        "name_es":"Manitos Amigas",
+        "events":[
+            {
+                "id":0,
+                "name":"Photo gallery ",
+                "name_es":"Galeria de fotos",
+                "images":[
+                    {"src":"manitos/boys1.jpg"},
+                    {"src":"manitos/boys2.jpg"},
+                    {"src":"manitos/boys3.jpg"},
+                    {"src":"manitos/boys4.jpg"},
+                    {"src":"manitos/boys5.jpg"},
+                    {"src":"manitos/boys6.jpg"},
+                    {"src":"manitos/boys7.jpg"},
+                    {"src":"manitos/boys_e.jpg"}
+                ],
+                "comments": [],
+                "date": ""
+            }
+        ]
+    },
+    {
+        "image":{
+            "src":"picnic_e.jpg",
+            "title":"Picnic Latino",
+            "title_es":"Picnic Latino"
+        },
+        "name":"Picnic Latino",
+        "name_es":"Picnic Latino",
+        "events":[
+            {
+                "id":0,
+                "name":"Photo gallery",
+                "name_es":"Galeria de fotos",
+                "images":[
+                    {"src":"picnic/1.jpg"},
+                    {"src":"picnic/2.jpg"},
+                    {"src":"picnic/3.jpg"},
+                    {"src":"picnic/4.jpg"},
+                    {"src":"picnic/5.jpg"},
+                    {"src":"picnic/6.jpg"},
+                    {"src":"picnic/7.jpg"}
+                ],
+                "comments": [],
+                "date": ""
+            }
+        ]
+    },
+    {
+        "image":{
+            "src":"juventud.jpg",
+            "title":"Juventud acumulada",
+            "title_es":"Juventud acumulada"
+        },
+        "name":"Juventud Acumulada",
+        "name_es":"Juventud Acumulada",
+        "events":[
+            {
+                "id":0,
+                "name":"Walk to Hamilton Gardens 2023",
+                "name_es":"Paseo en jardínes de Hamilton 2023",
+                "images":[
+                    {"src":"jac/2023/01.webp"},
+                    {"src":"jac/2023/02.webp"},
+                    {"src":"jac/2023/03.webp"},
+                    {"src":"jac/2023/04.webp"},
+                    {"src":"jac/2023/05.webp"},
+                    {"src":"jac/2023/06.webp"} 
+                ],
+                "comments": [],
+                "date": ""
+            },
+            {
+                "id":1,
+                "name":"Latin American Senior Seminar 2023",
+                "name_es":"Seminario para adultos mayores latino 2023",
+                "images":[
+                    {"src":"jac/2023/s01.webp"},
+                    {"src":"jac/2023/s02.webp"},
+                    {"src":"jac/2023/s03.webp"},
+                    {"src":"jac/2023/s04.webp"},
+                    {"src":"jac/2023/s05.webp"} 
+                ]
+            },
+            {
+                "id":2,
+                "name":"Walk to Devonport 2023",
+                "name_es":"Paseo a Devonport 2023",
+                "images":[
+                    {"src":"jac/2023/paseodevonport.webp"} 
+                ]
+            },
+            {
+                "id":3,
+                "name":"Welcome to spring 2022",
+                "name_es":"Bienvenida a la primavera 2022",
+                "images":[
+                    {"src":"jac/2022/p01.webp"},
+                    {"src":"jac/2022/p02.webp"},
+                    {"src":"jac/2022/p03.webp"},
+                    {"src":"jac/2022/p04.webp"},
+                    {"src":"jac/2022/p05.webp"},
+                    {"src":"jac/2022/p06.webp"},
+                    {"src":"jac/2022/p07.webp"},
+                    {"src":"jac/2022/p08.webp"}
+                ] 
+            },
+            {
+                "id":4,
+                "name":"Photo gallery 2022",
+                "name_es":"Galeria de fotos 2022",
+                "images":[
+                    {"src":"jac/2022/01.jpeg"},
+                    {"src":"jac/2022/02.jpeg"},
+                    {"src":"jac/2022/03.jpeg"}
+                ],
+                "comments":[
+                    {
+                        "comment":"”Gracias, esta última actividad estuvo magnífica. Volvernos a ver después de mucho tiempo y mantenernos saludables es lo mejor. Gracias Norma y Maria por su cariño a nuestra “juventud acumulada”",
+                        "author":"Teresa, Perú"
+                    },
+                    {
+                        "comment":"Me gusto mucho este grupo. Fue muy agradable conocer a otros latinos.",
+                        "author":"Anita, Chile"
+                    },
+                    {
+                        "comment":"Hola a todos, fue una gran felicidad participar en este grupo de la juventud real, fue muy hermoso. Gracias.",
+                        "author":"Beatriz, Perú"
+                    },
+                    {
+                        "comment":"Cuando “Juventud acumulada” nos llamó, llegamos con alegría a compartir nuestros sueños… con canciones, regalos y terapias que la gente de bien nos brinda su apoyo sincero. Celebraron nuestras vidas con amor sincero y luego todo gracias por esos encantadores amigos. ",
+                        "author":"Himelda, Colombia"
+                    },
+                    {
+                        "comment":"La “Mano Amiga” ha sido parte de nuestras vidas durante muchos años, donde nos reunimos y compartimos historias pasadas, nos reímos, hacemos ejercicios, aprendemos inglés, hacemos viajes locales, juegos para estimular nuestros cerebros. Espero todos los meses participar ",
+                        "author":"Fresia, Chile"
+                    },
+                    {
+                        "comment":"Mano amiga ofrece una mano a todos los necesitados, también los voluntarios recogen a los que no tienen transporte. Es un gran grupo social. ",
+                        "author":"Soledad, Chile"
+                    }
+                ]
+            },
+            {
+                "id":5,
+                "name":"Photo gallery 2020",
+                "name_es":"Galeria de fotos 2020",
+                "images":[
+                    {"src":"jac/2020/juventud1.jpeg"},
+                    {"src":"jac/2020/juventud2.jpeg"},
+                    {"src":"jac/2020/juventud3.jpeg"},
+                    {"src":"jac/2020/juventud4.jpeg"},
+                    {"src":"jac/2020/juventud5.jpeg"},
+                    {"src":"jac/2020/juventud6.jpeg"},
+                    {"src":"jac/2020/juventud7.jpeg"},
+                    {"src":"jac/2020/juventud8.jpeg"},
+                    {"src":"jac/2020/juventud9.jpeg"},
+                    {"src":"jac/2020/juventud10.jpeg"},
+                    {"src":"jac/2020/juventud11.jpeg"},
+                    {"src":"jac/2020/juventud12.jpeg"}
+                ]
+            },
+            {
+                "id":6,
+                "name":"Photo gallery 2019",
+                "name_es":"Galeria de fotos 2019",
+                "images":[
+                    {"src":"jac/2019/juventud1.jpeg"},
+                    {"src":"jac/2019/juventud2.jpeg"},
+                    {"src":"jac/2019/juventud3.jpeg"},
+                    {"src":"jac/2019/juventud4.jpeg"},
+                    {"src":"jac/2019/juventud5.jpeg"},
+                    {"src":"jac/2019/juventud6.jpeg"},
+                    {"src":"jac/2019/juventud7.jpeg"},
+                    {"src":"jac/2019/juventud8.jpeg"},
+                    {"src":"jac/2019/juventud9.jpeg"},
+                    {"src":"jac/2019/juventud10.jpeg"},
+                    {"src":"jac/2019/juventud11.jpeg"},
+                    {"src":"jac/2019/juventud12.jpeg"},
+                    {"src":"jac/2019/juventud13.jpeg"},
+                    {"src":"jac/2019/juventud14.jpeg"},
+                    {"src":"jac/2019/juventud15.jpeg"}
+                ]
+            },
+            {
+                "id":7,
+                "name":"Photo gallery 2018",
+                "name_es":"Galeria de fotos 2018",
+                "images":[
+                    {"src":"jac/2018/juv acum2.jpg"},
+                    {"src":"jac/2018/juv acum3.jpg"},
+                    {"src":"jac/2018/juv acum4.jpg"},
+                    {"src":"jac/2018/juventud acumulada.jpg"}
+                ]
+            },
+            {
+                "id":8,
+                "name":"Photo gallery 2017",
+                "name_es":"Galeria de fotos 2017",
+                "images":[
+                    {"src":"jac/2017/2017_1.jpg"},
+                    {"src":"jac/2017/2017_2.jpg"},
+                    {"src":"jac/2017/2017_3.jpg"},
+                    {"src":"jac/2017/2017_4.jpg"},
+                    {"src":"jac/2017/2017_5.jpg"},
+                    {"src":"jac/2017/2017_6.jpg"},
+                    {"src":"jac/2017/2017_7.jpg"},
+                    {"src":"jac/2017/2017_8.jpg"}
+                     
+                ]
+            }                   
+        ]
+    }
+]

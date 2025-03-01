@@ -1,0 +1,108 @@
+export const languages = {
+    en: 'English Version',
+    es: 'Versión en Español',
+  };
+  
+  export const defaultLang = 'en';
+  
+  export const ui = {
+    en: {
+      'nav.home': 'News',
+      'nav.about': 'About',
+      'nav.board': 'Board',
+      'nav.gallery': 'Gallery',
+      'nav.contact': 'Contact',
+      'news.browser.title':'Mano Amiga | Home',
+      'news.description':'Home',
+      'news.title':'Ultimas noticias',
+      'nextevents.title':'Upcoming Events',
+      'board.browser.title':'Mano Amiga | Board',
+      'board.description':'Our team is made up of Latinos of different nationalities and professions residing in New Zealand whose common interest is to provide support to the Latino community. We also have a group of enthusiastic volunteers who collaborate in activities on an occasional or permanent basis.',
+      'board.title':'Board',
+      'board.volunteers.title':'Our Volunteers',
+      'board.volunteers.description':'Behind every success you find our incredible group of volunteers - committed individuals who contribute their time, effort, and heart to support the various initiatives. Thanks to their dedication, each small effort becomes a big difference to our cherished community.',
+      'gallery.browser.title':'Mano Amiga | Gallery',
+      'gallery.description':'Photographic record of some events carried out with our community.',
+      'gallery.title':'Events',
+      'references.title':'Links of interest',
+      'followus.title':'Follow Us',
+      'copyright':'All rights reserved',
+      'countryname':'New Zealand',
+      'contact.browser.title':'Mano Amiga | Contact',
+      'contact.description':'Contact us using the contact form.',
+      'contact.title':'Contact',
+      'contact.name':'Name',
+      'contact.name.placeholder':'Your Name Here',
+      'contact.reason':'Reason',
+      'contact.reason.placeholder':'Reason',
+      'contact.email':'Email',
+      'contact.email.placeholder':'Your Email Here',
+      'contact.message':'Message',
+      'contact.message.placeholder':'Your Message Here',
+      'contact.send':'Send',
+      'contact.reset':'Reset',
+      'donations.browser.title':'Donations',
+      'donations.title':'Donations',
+      'donations.bankaccountnumber':'Bank account number',
+      'donations.label':'Your contribution is essential to continue supporting the Latin community in New Zealand, especially our elderly and children. With your donation, we can provide critical assistance to those in need and develop programs that improve the quality of life for the most vulnerable.'
+    },
+    es: {
+      'nav.home': 'Noticias',
+      'nav.about': 'Acerca',
+      'nav.board': 'Directiva',
+      'nav.gallery': 'Galeria',
+      'nav.contact': 'Contacto',
+      'news.browser.title':'Mano Amiga | Inicio',
+      'news.description':'Ultimas noticias',
+      'news.title':'Ultimas noticias',
+      'nextevents.title':'Próximos Eventos',
+      'board.browser.title':'Mano Amiga | Directiva',
+      'board.description':'Nuestro equipo está compuesto por latinos de diferentes nacionalidades y profesiones que residen en Nueva Zelanda cuyo interés común es brindar un soporte a la comunidad Latina. Además contamos con un grupo de entusiastas voluntarios que colaboran en actividades en forma ocasional o permanente.',
+      'board.title':'Directiva',
+      'board.volunteers.title':'Nuestros voluntarios',
+      'board.volunteers.description':'Detrás de cada éxito se encuentra nuestro increíble grupo de voluntarios: personas comprometidas que aportan su tiempo, esfuerzo y corazón para apoyar las distintas iniciativas. Gracias a su dedicación, cada pequeño esfuerzo se convierte en una gran diferencia para nuestra querida comunidad.', 
+      'gallery.browser.title':'Mano Amiga | Galería',
+      'gallery.description':'Registro fotográfico de algunos eventos realizados con nuestra comunidad.',
+      'gallery.title':'Eventos',
+      'references.title':'Enlaces de interés',
+      'followus.title':'Síguenos',
+      'copyright':'Todos los derechos reservados',
+      'countryname':'Nueva Zelanda',
+      'contact.browser.title':'Mano Amiga | Contacto',
+      'contact.description':'Comunícate con nosotros usando el formulario de contacto.',
+      'contact.title':'Contacto',
+      'contact.name':'Nombres',
+      'contact.name.placeholder':'Introduzca su nombre',
+      'contact.reason':'Motivo',
+      'contact.reason.placeholder':'Introduzca el motivo',
+      'contact.email':'Dirección de Correo Electrónico',
+      'contact.email.placeholder':'Introduzca su correo Electrónico',
+      'contact.message':'Mensage',
+      'contact.message.placeholder':'Introduzca su mensaje',
+      'contact.send':'Enviar',
+      'contact.reset':'Limpiar',
+      'donations.browser.title':'Donaciones',
+      'donations.title':'Donaciones',
+      'donations.bankaccountnumber':'Cuenta Bancaria',
+      'donations.label':'Tu contribución es esencial para continuar apoyando a la comunidad latina en Nueva Zelanda, especialmente a nuestros abuelos y niños. Con tu donación, podemos brindar asistencia crucial a quienes lo necesitan y desarrollar programas que mejoren la calidad de vida de los más vulnerables.'
+    },
+  } as const;
+
+  export const showDefaultLang = false;
+
+  export const routes = {
+    en: {
+      'about': 'about',
+      'board': 'board',
+      'gallery': 'gallery',
+      'contact': 'contact',
+      'albums':'albums'
+    },
+    es: {
+      'about': 'about',
+      'board': 'board',
+      'gallery': 'gallery',
+      'contact': 'contact',
+      'albums': 'albums'
+    },
+  }

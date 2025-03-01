@@ -1,0 +1,54 @@
+---
+import Layout from "../../layouts/pages.astro";
+import gallery from "../../data/gallery.json";
+import "../../base.css";
+
+import { getLangFromUrl, useTranslations, useTranslatedPath } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+
+---
+
+<Layout
+  title={t('gallery.browser.title')}
+  description={t('gallery.description')}
+  pubDate={new Date("August 08 2021")}
+  heroImage="/blog-placeholder-about.jpg"
+>
+<section class="mx-4 md:mx-0 ">
+    <h1 class="font-semibold my-2">{t('gallery.title')}</h1>
+    {
+      gallery.map((galleryItem, galleryindex) => {
+        return (
+        <article class="bg-bgsecondary grid grid-flow-row md:grid-cols-2 mb-2 ">
+            <div class=" p-4 mx-auto">
+              <img
+                src={`/images/gallery/${galleryItem.image.src}`}
+                loading="lazy"
+                decoding="async"
+                class="w-80"
+                alt={galleryItem.image.title}
+              />
+            </div>
+            <div class="p-4">
+              <span class="text-article_tertiary text-xs font-bold mb-2">{galleryItem.date}</span>
+              <div class="text-navprimary text-3xl font-semibold py-2">{lang==='es'?galleryItem.name_es:galleryItem.name}</div>
+              <ul>
+                {galleryItem.events.map((item, eventindex) => {
+                  return (
+                  <li class="text-navprimary font-light cursor-pointer"> 
+                      <a href={translatePath("/albums/" + galleryindex + "/" +item.id)}>{lang==='es'?item.name_es:item.name}</a> 
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          </article>
+        );
+      })
+    }
+  </section>
+</Layout>
+ 

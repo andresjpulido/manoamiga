@@ -1,0 +1,21 @@
+---
+import Layout from "../../layouts/pages.astro";
+import directives from "../../data/directives.json";
+import "../../base.css";
+import BoardUI from '../../components/BoardUI.astro'
+
+import { getLangFromUrl, useTranslations, useTranslatedPath } from '../../i18n/utils';
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<Layout
+  title={t('board.browser.title')}
+  description={t('board.description')}
+  pubDate={new Date("August 08 2021")}
+  heroImage="/blog-placeholder-about.jpg"
+>
+
+  <BoardUI directives={directives} pagetitle={t('nav.board')} lang={lang}  volunteerstitle={t('board.volunteers.title')} volunteersdescription={t('board.volunteers.description')} />
+ 
+</Layout>

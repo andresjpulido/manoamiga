@@ -1,0 +1,14 @@
+---
+ 
+const { messages } = Astro.props;
+---
+ 
+<div>
+{
+ messages && messages.map((item:any, index:any) => (
+<div class="comments" >
+  <p class="comment">{item.comment}</p>
+
+  <p class="author">{item.author}</p>
+</div> ))}
+</div> 

@@ -1,0 +1,177 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+import { SITE_TITLE } from "../consts";
+
+import { getLangFromUrl, useTranslations, useTranslatedPath } from '../i18n/utils';
+import LanguagePicker from '../components/LanguagePicker.astro';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+---
+  
+<div class="hidden md:block md:relative">
+  <img src="/images/header/Portada5.jpg" alt="" class="px-16"  decoding="async"
+  loading="lazy" />
+
+  <div class="absolute top-2 right-16 pr-2">
+    <LanguagePicker />
+  </div>
+  
+  <!-- nav desktop -->
+  <nav
+    class="flex flex-row px-16 py-4 justify-center items-center"
+  >
+    <HeaderLink
+      class="bg-bgsecondary grow text-center text-navsecondary border-tertiary border-r-2 border-b-4 border-solid p-2 py-3"
+      href={translatePath("/")}> {t('nav.home')}</HeaderLink
+    >
+    <HeaderLink
+      class="bg-bgsecondary grow text-center text-navprimary border-tertiary border-r-2 border-b-4 border-solid p-2 py-3"
+      href={translatePath("/about")}>{t('nav.about')}</HeaderLink
+    >
+    <HeaderLink
+      class="bg-bgsecondary grow text-center text-navprimary border-tertiary border-r-2 border-b-4 border-solid p-2 py-3"
+      href={translatePath("/board")}>{t('nav.board')}</HeaderLink
+    >
+    <HeaderLink
+      class="bg-bgsecondary grow text-center text-navprimary border-tertiary border-r-2 border-b-4 border-solid p-2 py-3"
+      href={translatePath("/gallery")}>{t('nav.gallery')}</HeaderLink
+    >
+    <HeaderLink
+      class="bg-bgsecondary grow text-center text-navprimary border-tertiary border-r-2 border-b-4 border-solid p-2 py-3"
+      href={translatePath("/contact")}>{t('nav.contact')}</HeaderLink
+    >
+  </nav>
+</div>
+  <!-- nav mobile -->
+  <nav class="md:hidden sticky top-0 bg-one">
+    <div class="flex justify-between items-center px-4 bg-bgsecondary">
+      
+      <div class="mx-auto ">
+        <img src="/images/header/manoamigalogo2.webp" alt="" class="h-14" >
+      </div>
+       
+      <button
+        id="menu-button"
+        class="button-three"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+      >
+      <img src="/menu.svg" alt="" class="size-8">
+      </button>
+    </div>
+
+    <!-- menu mobile -->
+    <section
+      id="mobile-menu"
+      class="hide-menu fixed top-[56px] left-0 z-50 w-full h-full transition-transform bg-black/75 border-primary-blue"
+    >
+      <div class="bg-one w-[75%] h-full drop-shadow-2xl text-navprimary bg-bgsecondary">
+        <ul
+          class="unset flex flex-col justify-center text-text-bold gap-4 [&>li]:p-1 px-6"
+        >
+          <li><HeaderLink href={translatePath("/")}>{t('nav.home')}</HeaderLink></li>
+          <li><HeaderLink href={translatePath("/about")}>{t('nav.about')}</HeaderLink></li>
+          <li><HeaderLink href={translatePath("/board")}>{t('nav.board')}</HeaderLink></li>
+          <li><HeaderLink href={translatePath("/gallery")}>{t('nav.gallery')} </HeaderLink></li>
+          <li><HeaderLink href={translatePath("/contact")}>{t('nav.contact')}</HeaderLink></li>
+          <li><LanguagePicker /></li>
+        </ul>
+      </div>
+    </section>
+  </nav>
+
+
+<script>
+  // @ts-nocheck
+
+  document.querySelector("#menu-button").addEventListener("click", () => {
+    const currentState = document
+      .querySelector("#menu-button")
+      .getAttribute("data-state");
+    if (!currentState || currentState === "closed") {
+      document
+        .querySelector("#menu-button")
+        .setAttribute("data-state", "opened");
+      document
+        .querySelector("#menu-button")
+        .setAttribute("aria-expanded", "true");
+
+      const menuElem = document.querySelector("#mobile-menu");
+      menuElem.classList.remove("hide-menu");
+      menuElem.classList.add("show-menu");
+      document.body.style.overflow = "hidden";
+    } else {
+      document
+        .querySelector("#menu-button")
+        .setAttribute("data-state", "closed");
+      document
+        .querySelector("#menu-button")
+        .setAttribute("aria-expanded", "false");
+
+      const menuElem = document.querySelector("#mobile-menu");
+      menuElem.classList.remove("show-menu");
+      menuElem.classList.add("hide-menu");
+      document.body.style.overflow = "auto";
+    }
+  });
+</script>
+
+<style>
+  .hide-menu {
+    transform: translateX(-100%);
+  }
+  .show-menu {
+    transform: translateX(0%);
+  }
+
+  .button-three {
+    --button-color: black;
+    overflow: hidden;
+  }
+
+  .button-three .hamburger {
+    transition:
+      translate 1s,
+      rotate 1s;
+  }
+
+  .button-three[aria-expanded="true"] .hamburger {
+    translate: 10px -10px;
+    rotate: 0.125turn;
+  }
+
+  .button-three .line {
+    transition: 1s;
+    stroke-dasharray: 60 31 60 300;
+  }
+
+  .button-three[aria-expanded="true"] .line {
+    stroke-dasharray: 60 105 60 300;
+    stroke-dashoffset: -90;
+  }
+</style>
+
+<style>
+  h2 a,
+  h2 a.active {
+    text-decoration: none;
+  } 
+  nav a {
+     
+    text-decoration: none;
+  }
+  nav a.active {
+    text-decoration: none; 
+  }
+  .social-links,
+  .social-links a {
+    display: flex;
+  }
+  @media (max-width: 720px) {
+    .social-links {
+      display: none;
+    }
+  }
+</style>

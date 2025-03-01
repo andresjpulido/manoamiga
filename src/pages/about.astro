@@ -1,0 +1,144 @@
+---
+import Layout from "../layouts/pages.astro";
+import "../base.css";
+---
+
+<Layout
+  title="Mano Amiga | About"
+  description="Learn how this dream began and what our mission, vision and principles are."
+  pubDate={new Date("August 08 2021")}
+  heroImage="/blog-placeholder-about.jpg"
+>
+<section class="mx-4 md:mx-0">
+    <h1 class="font-semibold my-2">About Us</h1> 
+    <article class=" bg-bgsecondary"> 
+      <img src="/images/about/logopage.jpg" alt="Mano Amiga Logo" title="Mano Amiga Logo" class="block mx-auto">
+      <hr class="m-4 mx-8"/>
+      <p class="text-article_tertiary mx-8 pb-8 leading-loose">
+        Mano Amiga is a non-profit organization that began operating in 2010 with the goal of helping and guiding Spanish-speaking individuals who needed a Helping Hand in foreign lands. Our Charity Commission Registration Number is CC53903. Mano Amiga provides social and economic assistance to immigrants and their families, who may feel disoriented in their new country of residence. This help is provided without discrimination based on nationality, religion, politics, age, or race.
+      </p>
+    </article>
+
+    <article class="  bg-bgsecondary">
+      
+      <h2 class="mx-8 font-semibold text-xl text-center text-article_primary">Our Beginnings</h2>
+      <hr class="m-4 mx-8"/>
+      <p class="text-article_tertiary mx-8 pb-8 leading-loose">
+        The group started in 2010 in response to the earthquake in Concepción, Chile. A group of women, led by Marisol Valenzuela, held a fundraising meeting to help the affected families, channeling the money through the Catholic Church. Women from different parts of Latin America attended to collaborate in the event. Empanadas, Chilean bread, and other items were sold. It was a beautiful event full of solidarity and kindness. This is how the idea arose to meet again and think about what they could do to help Latino immigrant friends in New Zealand.
+      </p>
+      <p class="text-article_tertiary mx-8 pb-8 leading-loose">
+        The group began to take shape and identified its objectives and goals, along with the planning of different activities. They elected their board of directors and started working together, meeting once a month. Over these seven years, they helped a large number of people from various Spanish-speaking countries, such as Chile, Colombia, Argentina, Mexico, and Brazil. In some cases, they provided assistance with visits, transportation, money, groceries, clothing, medicines, paperwork, and more.
+      </p>
+      <p class="text-article_tertiary mx-8 pb-8 leading-loose">
+        Mano Amiga organizes an annual bingo event every year to raise funds, which are used to help those in need throughout the year. They have also participated by selling food at various cultural events. In November 2016, they received approval to become a legally registered charity. With great excitement, Mano Amiga invites everyone to share this wonderful news and to reach out whenever necessary. They also express their gratitude to the founding President, Marisol Valenzuela, and to everyone who supported in some way to make this dream a reality—the dream of continuing together, now with the legal recognition of the government of this great country, New Zealand.
+      </p>
+    </article>
+
+    <article class="about bg-bgsecondary">
+      <h2 class="mx-8 font-semibold text-xl text-center text-article_primary">Mision</h2>
+      <hr class="m-4 mx-8"/>
+      <p class="text-article_tertiary mx-8 pb-8 leading-loose">
+        Our mission is to empower Spanish-speaking immigrants during their stay in New Zealand so that they can successfully integrate into their new communities and thrive in New Zealand.
+      </p>
+    </article>
+
+    <article class="about bg-bgsecondary">
+      <h2 class="mx-8 font-semibold text-xl text-center text-article_primary">Vision</h2>
+      <hr class="m-4 mx-8"/>
+      <p class="text-article_tertiary mx-8 pb-8 leading-loose">
+        Our vision is a country where every Spanish-speaking immigrant has the resources and support they need to overcome the challenges of assimilation and build a fulfilling life in New Zealand.
+      </p>
+    </article>
+
+    <article class="about bg-bgsecondary">
+      <h2 class="mx-8 font-semibold text-xl text-center text-article_primary">Values</h2>
+      <hr class="m-4 mx-8"/>
+      <p class="text-article_tertiary mt-8">
+        <img
+          src="/images/about/sympathy.svg"
+          alt="Mano amiga Values - Sympathy"
+          class="size-48"
+        />
+      </p>
+      <p class="text-article_tertiary mt-8">
+        <span class="bold">Compassion:</span> We approach our work with solidarity and understanding, recognizing the unique challenges faced by Spanish-speaking immigrants.
+      </p>
+      <p class="text-article_tertiary mt-8">
+        <img
+          src="/images/about/inclusion.svg"
+          alt="Mano amiga Values - Inclusion"
+          class="size-48"
+        /></p>
+        <p class="text-article_tertiary mt-8">
+        <span class="bold">Inclusion:</span> We strive to create an inclusive environment where all immigrants feel welcomed and valued.
+      </p>
+      <p class="text-article_tertiary">
+        <img
+          src="/images/about/empowerment.svg"
+          alt="Mano amiga Values - Empowerment"
+          class="size-48"
+        /></p>
+        <p class="text-article_tertiary mt-8">
+        <span class="bold">Empowerment:</span> We believe in empowering immigrants to take control of their own lives and achieve their goals.
+      </p>
+      <p class="text-article_tertiary">
+        <img
+          src="/images/about/collaboration.svg"
+          alt="Mano amiga Values - Collaboration"
+          class="size-48"
+        />
+        </p>
+        <p class="text-article_tertiary mt-8">
+        <span class="bold">Collaboration:</span> We collaborate with other organizations and community members to provide the best possible support to Spanish-speaking immigrants.
+      </p>
+    </article>
+  </section>
+</Layout>
+
+<style>
+  .about {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 1rem;
+  }
+
+  .about h1 {
+    font-family: inherit;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-left: 2rem;
+    text-align: center;
+  }
+
+  .about h2 {
+    font-family: inherit;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .about hr {
+     
+  }
+
+  .about p { 
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: justify;
+    line-height: 2rem;
+  }
+
+  .about img {
+    width: 50%;
+    display: block;
+    margin: auto;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+</style>

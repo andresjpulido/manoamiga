@@ -1,0 +1,19 @@
+---
+import { languages } from '../i18n/ui';
+import { getLangFromUrl, getRouteFromUrl , useTranslatedPath } from '../i18n/utils';
+const langpage = getLangFromUrl(Astro.url);
+const route = getRouteFromUrl(Astro.url);
+const translatePath = useTranslatedPath(langpage);
+---
+
+<ul class=" text-navprimary bg-bgsecondary border-solid border-2 border-article_primary text-sm rounded-md ">
+  {Object.entries(languages).map(([lang, label]) => {
+    if(lang !== langpage)
+    return (
+    <li>
+      <a href={translatePath(`/${route ? route : ''}`, lang)}>
+        <div class="py-2 px-2 w-48 text-center">{label}</div>
+      </a>
+    </li>
+  )})}
+</ul>

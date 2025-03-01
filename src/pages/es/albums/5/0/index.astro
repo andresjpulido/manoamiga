@@ -1,0 +1,77 @@
+---
+ import Layout from "../../../../../layouts/pages.astro";
+ import gallery from "../../../../../data/gallery.json";
+import Comments from "../../../../../components/comments.astro";
+import "../../../../../base.css";
+import { getLangFromUrl, useTranslations } from '../../../../../i18n/utils';
+export const prerender = false; 
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang); 
+ 
+const galleryId = 5
+const eventId = 0
+const event = gallery[galleryId].events[eventId]
+
+---
+ 
+<Layout
+  title={t('gallery.browser.title')}
+  description={t('gallery.description')}
+  pubDate={new Date("August 08 2021")}
+  heroImage="/blog-placeholder-about.jpg"
+>
+<section class="mx-4 md:mx-0 ">
+    <h1 class="font-semibold my-2">{t('gallery.title')}</h1>
+
+<section class="bg-bgsecondary "> 
+    <p class="text-navprimary p-4">
+      {gallery[galleryId]?.name} / {lang==='es'?event?.name_es:event?.name}
+    </p>
+    <div>{event?.date}</div>
+    <div class="albumlist">
+      {
+       
+		      event?.images.map((item, index:any) => (
+            <div class="albumitem"  >
+              <img
+                src={ `/images/gallery/${item.src}`}
+                class="albumimg"
+                alt={`${event.name} +  " " + ${index}`}
+              />
+            </div>
+          ))
+      }
+    </div>
+
+    <Comments messages={event?.comments} />
+
+    <div class="bg-bgsecondary"> 
+        <button class="btn-primary m-4" id="back-gallery" onclick="history.back()">Back</button> 
+    </div>
+    
+  </section>
+ 
+
+<style>
+
+	.albumlist {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 1rem;
+    padding-top: 1rem;
+  }
+
+.albumitem {
+	margin: 5px;
+	height: 40vh;
+	flex-grow: 1;
+}
+	.albumimg {
+	max-height: 100%;
+	min-width: 100%;
+	object-fit: cover;
+	vertical-align: bottom;
+  object-position: top;
+}
+
+</style>

@@ -1,0 +1,26 @@
+---
+import Layout from "../layouts/pages.astro";
+import "../base.css";
+import ContactUI from "../components/ContactUI.astro";
+
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const showresponse = null;
+const isprocessing = null;
+const handleSubmit = () => {};
+---
+
+<Layout
+title={t('contact.browser.title')}
+description={t('contact.description')}
+  pubDate={new Date("August 08 2021")}
+  heroImage="/blog-placeholder-about.jpg"
+>
+
+<ContactUI pagetitle={t('nav.contact')} lang={lang} />
+
+</Layout>
+ 
+ 

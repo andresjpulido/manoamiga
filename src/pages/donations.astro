@@ -1,0 +1,31 @@
+---
+import Layout from "../layouts/pages.astro";
+import "../base.css";
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+---
+
+<Layout
+title={t('donations.browser.title')}
+description={t('contact.description')}
+  pubDate={new Date("August 08 2021")}
+  heroImage="/blog-placeholder-about.jpg"
+>
+
+<section class="mx-4 md:mx-0">
+    <h1 class="font-semibold my-2">{t('donations.title')}</h1>
+    <article class=" bg-bgsecondary text-fourth p-4">
+            <p class="pb-4">{t('donations.label')}</p>
+            <section class="flex flex-row">
+                <img src='/images/brands/kiwibank.png' alt="cuenta Kiwibank" class="size-28" /> 
+                <section class="p-4">
+                    <p>{t('donations.bankaccountnumber')}:</p>
+                    <p class="text-xl">38 9018 0656981 00</p> 
+                </section>
+            </section> 
+    </article>
+    </section>
+
+</Layout>

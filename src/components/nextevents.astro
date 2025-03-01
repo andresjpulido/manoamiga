@@ -1,0 +1,160 @@
+---
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+import Slides from "./slides.astro"
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<!--
+<li class="p-4 bg-bgsecondary">
+            <header class="flex justify-between">
+              <h2 class="font-bold">
+                 title 
+              </h2>
+              <h3 class="text-sm text-right">
+                 date 
+                 hour 
+              </h3>
+            </header>
+
+            <p class="py-1">
+               description 
+               location 
+               book 
+            </p>
+          </li>
+-->
+<section class="mx-4 md:mx-0 mb-6">
+  <h1 class="font-bold my-2">{t("nextevents.title")}</h1>
+  <ul class="">
+     
+    {
+      lang === "es" ? (
+      
+
+        <li class="my-2 p-4 bg-bgsecondary">
+          <header class="flex justify-between">
+            <h2 class="font-bold">Únete a una Tarde de Bingo Llena de Diversión  &#x1F38A;</h2>
+            <h3 class="text-sm text-right">7 de diciembre</h3>
+          </header>
+
+          <p class="py-1">¿Buscas una tarde de emoción y premios? No te pierdas nuestro próximo evento de Bingo, una oportunidad perfecta para divertirte, ganar grandes recompensas y apoyar a la comunidad latina.</p>
+
+          <p class="mt-2">Prepárate para:</p>
+          <ul class="list-disc">
+            <li class="ml-8">Gran Bingo</li>
+            <li class="ml-8">Bingos pequeños</li>
+            <li class="ml-8">
+                Colaboración con Carlos Arturo 
+            </li>
+            <li class="ml-8">Bailes y música</li>
+            <li class="ml-8">Comida increíble</li>
+            <li class="ml-8">Y muchas sorpresas, entrada $15</li>
+          </ul>
+          <p class="my-2">Cada entrada incluye una tarjeta de bingo por participante</p>
+          <h4>Asegura tu entrada:</h4>
+          <ul class="list-decimal">
+            <li class="ml-8">Haz una transferencia a Mano Amiga $15 a la cuenta número: 38-9018-0656981-00</li>
+            <li class="ml-8">Referencia: NombreApellido</li>
+            <li class="ml-8">Nota: Las transferencias deben estar vinculadas a tu nombre para reservar tu lugar.</li>
+          </ul>
+          <p class="mt-2">Capacidad limitada: 100 asientos</p>
+          <p class="mt-2 font-semibold">¡No te lo pierdas!</p>
+        </li>
+
+        <li class="my-2 p-4 bg-bgsecondary">
+          <header class="flex justify-between">
+            <h2 class="font-bold">Hola! Orakei</h2>
+            <h3 class="text-sm text-right">Inicio viernes 13/12 hasta sabado 26/04</h3>
+          </header> 
+
+          <p class="py-1">Este es un nuevo projecto de Mano Amiga, en colaboración con Auckland Council.</p>
+
+          <p class="py-1">Diferentes actividades para ninos durante las vacaciones desde Diciembre hasta Abril de 2025</p>
+          <ul class="list-disc">
+          <li class="ml-8">Villancicos Navidenos</li>
+            <li class="ml-8">Visitas a residencias de ancianos</li>
+            <li class="ml-8">Artesanías</li>
+            <li class="ml-8">Frases en español</li>
+            <li class="ml-8">Limpieza de playas</li>
+            <li class="ml-8">⁠Picnics</li>
+            <li class="ml-8">Jegos/deportes</li>
+            <li class="ml-8">Talleres para padres </li>
+            <li class="ml-8">y mucha más diversión!!</li>
+          </ul>
+         
+          <p class="py-1 font-medium" >
+          Registrate con Alexia Rojas @ +64 27 670 0057
+          </p>
+
+          <Slides />
+
+        </li>
+      ) : (
+      
+      <li class="my-2 p-4 bg-bgsecondary">
+          <header class="flex justify-between">
+            <h2 class="font-bold">Join Us for a Fun-Filled Bingo Afternoon &#x1F38A;</h2>
+            <h3 class="text-sm text-right">December 7th</h3>
+          </header>
+
+          <p class="py-1">Looking for a night of excitement and prizes? Don’t miss our upcoming Bingo Event, a perfect opportunity to have fun, win great rewards, and support the Latin community!</p>
+
+          <p class="mt-2">Get Ready For:</p>
+          <ul class="list-disc">
+            <li class="ml-8">Big Bingo</li>
+            <li class="ml-8">Little Bingos</li>
+            <li class="ml-8">
+              Draw in help of Carlos Arturo
+               
+            </li>
+            <li class="ml-8">Dances and music</li>
+            <li class="ml-8">⁠Amazing food</li>
+            <li class="ml-8">⁠And many surprises $15 entry</li>
+          </ul>
+          <p class="my-2">Each ticket includes One bingo card per participant</p>
+          <h4>Secure your ticket by:</h4>
+          <ul class="list-decimal">
+            <li class="ml-8">Transfer to Mano Amiga $15 at: 38-9018-0656981-00</li>
+            <li class="ml-8">Reference: NameSurname</li>
+            <li class="ml-8">Transfers must be linked to your name to save you spot</li>
+          </ul>
+          <p class="mt-2">Limited capacity: 100 seats</p>
+          <p class="mt-2 font-semibold">Don’t miss out!!</p>
+        </li>
+        <li class="my-2 p-4 bg-bgsecondary">
+          <header class="flex justify-between">
+            <h2 class="font-bold">Hola! Orakei</h2>
+            <h3 class="text-sm text-right">Starting on Friday 13/12 until Saturday 26/04</h3>
+          </header> 
+
+          <p class="py-1">This is Mano Amiga NZ's new project, in collaboration with Auckland Council.</p>
+
+          <p class="py-1">Different activities for kids during the holidays starting on December to April 2025</p>
+          <ul class="list-disc">
+            <li class="ml-8"> Christmas Carol</li>
+            <li class="ml-8"> ⁠Rest home visits</li>
+            <li class="ml-8"> ⁠Crafts</li>
+            <li class="ml-8"> ⁠Spanish phrases</li>
+            <li class="ml-8"> ⁠Clean up beaches</li>
+            <li class="ml-8">⁠Picnics</li>
+            <li class="ml-8">⁠Games/sports</li>
+            <li class="ml-8">⁠Parenting Workshops </li>
+            <li class="ml-8">⁠and so much more fun!!</li>
+          </ul>
+         
+          <p class="py-1 pb-6 font-medium" >
+          Book with Alexia Rojas @ +64 27 670 0057
+          </p>
+
+
+          <Slides />
+
+        </li>
+      )
+    }
+
+    
+  </ul>
+</section>
+

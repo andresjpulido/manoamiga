@@ -1,0 +1,34 @@
+---
+import Layout from "../../layouts/pages.astro";
+import gallery from "../../data/gallery.json";
+import Comments from "../../components/comments.astro";
+import Album from "../../components/Album.astro";
+import "../../base.css";
+export const prerender = false;
+ 
+//const galleryId = Astro.url.searchParams.get("galleryId") || "";
+//const eventId = Astro.url.searchParams.get("eventId") || "";
+//const event = gallery[parseInt(galleryId)].events[parseInt(eventId)]
+
+---
+
+<Layout
+  title="Mano Amiga | Album "
+  description="Lorem ipsum dolor sit amet"
+  pubDate={new Date("August 08 2021")}
+  heroImage="/blog-placeholder-about.jpg"
+>
+  <script>
+    const urlSearchParams = new URLSearchParams(window.location.search);
+    const params = Object.fromEntries(urlSearchParams.entries());
+     
+  </script>
+
+  <section class="mx-4 md:mx-0"> 
+    <h1 class="font-semibold my-2">Events</h1> 
+    <Album />
+  </section>
+
+</Layout> 
+
+

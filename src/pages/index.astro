@@ -1,0 +1,24 @@
+---
+import Layout from "../layouts/pages.astro"; 
+import "../base.css";
+import News from "../components/news.astro";
+ 
+import newsdata from "../data/news.json";
+import Nextevents from "../components/nextevents.astro";
+
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<Layout
+  title={t('news.browser.title')}
+  description={t('news.description')} 
+  pubDate={new Date("August 08 2021")}
+  heroImage="/cover.webp"
+> 
+  
+  <Nextevents />
+  <News newsdata={newsdata} pagetitle={t('nav.home')} lang={lang} /> 
+  
+</Layout>

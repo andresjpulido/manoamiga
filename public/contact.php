@@ -1,6 +1,10 @@
 
 <?php
-    //Importamos las variables del formulario de contacto
+//Importamos las variables del formulario de contacto
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
     @$Nombre = htmlspecialchars($_POST['Nombre']);
     @$Motivo = htmlspecialchars($_POST['Motivo']);
@@ -11,10 +15,7 @@
     $cabeceras = "From: $Correo\n" //La persona que envia el correo
     . "Reply-To: $Correo\n";
     $asunto = "From: CONTACTO MANO AMIGA $Motivo\n"; //asunto aparecera en la bandeja del servidor de correo
-    $email_to = "andresjpulido@gmail.com";
-    $email_t1 = "contacto@manoamiga.nz"; 
-    $email_t2 = "@manoamiga.nz"; 
-    $email_t3 = "@manoamiga.nz"; 
+    $email_to = "contacto@manoamiga.nz";  
     $contenido = "$Nombre te ha enviado un mensaje:\n"
     . "\n"
     . "Nombre: $Nombre\n"
@@ -23,34 +24,31 @@
     . "Mensaje: $Mensaje\n"
     . "\n";
 
-    //Enviamos el mensaje y comprobamos el resultado
-    if (@mail($email_to, $asunto ,$contenido ,$cabeceras )
-    //and @mail($email_t1, $asunto ,$contenido ,$cabeceras )
-    and @mail($email_t1, $asunto ,$contenido ,$cabeceras )
-    //and @mail($email_t3, $asunto ,$contenido ,$cabeceras )
-    ){
+$result = false;
+try{
+    $result = @mail($email_to, $asunto ,$contenido ,$cabeceras);
+} catch(Exception $e) {
+    echo 'Caught exception: ',  $e->getMessage(), "\n";
+}
 
-    //Si el mensaje se envía muestra una confirmación
-    echo "MENSAJE ENVIADO CON EXITO";
-    //"<div class="modal fade" id="respuesta2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    //   <div class="modal-dialog">
-    //     <div class="alert alert-success alert-dismissable">
-    //         <button type="button" class="close" data-dismiss="modal">×</button>
-    //         <strong>Su mensaje ha sido enviado correctamente.</strong>
-    //     </div>
-    //   </div>
-    // </div>";
-    }else{
-    //Si el mensaje no se envía muestra el mensaje de error
-    echo "ERRROR AL ENVIAR EL MENSAJE, INTENTE  MAS TARDE PORFAVOR";
-    // <div class="modal fade" id="respuesta2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    //   <div class="modal-dialog">
-    //     <div class="alert alert-danger alert-dismissable">
-    //         <button type="button" class="close" data-dismiss="modal">×</button>
-    //         <strong>ERROR. Intente mas tarde.</strong>
-    //     </div>
-    //   </div>
-    // </div>";
+
+    //Enviamos el mensaje y comprobamos el resultado
+    if ($result){
+
+        $data = "MENSAJE ENVIADO CON EXITO";
+        header_remove();
+        http_response_code(200);
+        header('Content-Type: application/json');
+        header('charset=utf-8');
+        echo json_encode($data);
+ 
+    } else { 
+        $data = "ERRROR AL ENVIAR EL MENSAJE, INTENTE  MAS TARDE PORFAVOR";
+        header_remove();
+        http_response_code(500);
+        header('Content-Type: application/json');
+        header('charset=utf-8');
+        echo json_encode($data);
     }
 
 ?>

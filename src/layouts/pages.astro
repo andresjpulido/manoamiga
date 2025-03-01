@@ -1,0 +1,53 @@
+---
+import type { CollectionEntry } from "astro:content"; 
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Seo from "../components/Seo.astro";
+import siteData from "../data/siteData.json";
+import FormattedDate from "../components/FormattedDate.astro";
+import Linksbar from "../components/linksbar.astro";
+import Followus from "../components/Followus.astro"
+import { getLangFromUrl } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+
+type Props = CollectionEntry<"pages">["data"];
+
+const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+---
+
+<html lang={lang}>
+  <head> 
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="theme-color" content="var(--primary-color)" />
+     
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="preload" href="/cover.webp" as="image" /> 
+    <link
+      rel="preload"
+      href="/fonts/Montserrat-Bold.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    /> 
+    
+    <Seo {siteData} {title} {description} />
+  </head>
+
+  <body class="bg-bgprimary"> 
+    <Header /> 
+    <div class="grid grid-flow-row md:grid-cols-3 gap-8 md:mx-16">
+      <div class="md:col-span-2 ">
+        <slot />
+      </div> 
+      <aside class="md:col-span-1">
+        <Followus />
+        <Linksbar />
+      </aside>
+    </div>
+    
+    <Footer />
+  </body>
+</html>
