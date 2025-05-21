@@ -237,6 +237,20 @@
         "events":[
             {
                 "id":0,
+                "name":"Juventud acumulada 2024",
+                "name_es":"Juventud acumulada 2024",
+                "images":[
+                    {"src":"jac/2024/01.webp"},
+                    
+                    {"src":"jac/2024/03.webp"} ,
+                    {"src":"jac/2024/02.webp"}
+                    
+                ],
+                "comments": [],
+                "date": ""
+            },
+            {
+                "id":0,
                 "name":"Walk to Hamilton Gardens 2023",
                 "name_es":"Paseo en jardínes de Hamilton 2023",
                 "images":[

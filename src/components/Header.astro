@@ -32,12 +32,17 @@ const translatePath = useTranslatedPath(lang);
     >
     <HeaderLink
       class="bg-bgsecondary grow text-center text-navprimary border-tertiary border-r-2 border-b-4 border-solid p-2 py-3"
-      href={translatePath("/board")}>{t('nav.board')}</HeaderLink
+      href={translatePath("/programs")}>{t('nav.programs')}</HeaderLink
     >
+    <HeaderLink
+    class="bg-bgsecondary grow text-center text-navprimary border-tertiary border-r-2 border-b-4 border-solid p-2 py-3"
+    href={translatePath("/board")}>{t('nav.board')}</HeaderLink
+  >
     <HeaderLink
       class="bg-bgsecondary grow text-center text-navprimary border-tertiary border-r-2 border-b-4 border-solid p-2 py-3"
       href={translatePath("/gallery")}>{t('nav.gallery')}</HeaderLink
     >
+   
     <HeaderLink
       class="bg-bgsecondary grow text-center text-navprimary border-tertiary border-r-2 border-b-4 border-solid p-2 py-3"
       href={translatePath("/contact")}>{t('nav.contact')}</HeaderLink
@@ -73,6 +78,7 @@ const translatePath = useTranslatedPath(lang);
         >
           <li><HeaderLink href={translatePath("/")}>{t('nav.home')}</HeaderLink></li>
           <li><HeaderLink href={translatePath("/about")}>{t('nav.about')}</HeaderLink></li>
+          <li><HeaderLink href={translatePath("/programs")}>{t('nav.programs')}</HeaderLink></li>
           <li><HeaderLink href={translatePath("/board")}>{t('nav.board')}</HeaderLink></li>
           <li><HeaderLink href={translatePath("/gallery")}>{t('nav.gallery')} </HeaderLink></li>
           <li><HeaderLink href={translatePath("/contact")}>{t('nav.contact')}</HeaderLink></li>
