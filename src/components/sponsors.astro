@@ -1,0 +1,50 @@
+---
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath,
+} from "../i18n/utils";
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<article class="linksn">
+  <h3 class="font-bold my-2">{t("sponsors.title")}</h3>
+  <ul class="flex flex-col gap-4 mb-4">
+    <li
+      class="bg-bgsecondary text-navprimary rounded-md p-4 hover:text-bgsecondary fill-navsecondary"
+    >
+      <a
+        href="https://www.ethniccommunities.govt.nz/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex flex-row gap-4 items-center justify-center"
+      >
+        <img src="/public/images/banners/logoEthnicCommunities.svg" />
+      </a>
+    </li>
+
+    <li class="bg-bgsecondary p-4 rounded-md">
+      <a
+        href="https://new.aucklandcouncil.govt.nz/en/about-auckland-council/how-auckland-council-works/local-boards/all-local-boards/orakei-local-board.html"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex flex-row gap-4 items-center justify-center"
+      >
+        <p class="text-article_primary">Ōrākei Ōrākei Local Board</p> 
+      </a>
+    </li>
+
+    <li class="bg-bgsecondary p-4 rounded-md">
+      <a
+        href="https://www.publictrust.co.nz/grants/helen-stewart-royle-charitable-trust/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex flex-col gap-4 items-center justify-center"
+      >
+        <p class="text-article_primary">Helen Stewart Royle </p> 
+        <p class="text-xs text-article_primary">Charitable Trust</p>
+      </a>
+    </li>
+  </ul>
+</article>

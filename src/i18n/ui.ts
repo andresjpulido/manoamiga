@@ -45,7 +45,8 @@ export const languages = {
       'donations.browser.title':'Donations',
       'donations.title':'Donations',
       'donations.bankaccountnumber':'Bank account number',
-      'donations.label':'Your contribution is essential to continue supporting the Latin community in New Zealand, especially our elderly and children. With your donation, we can provide critical assistance to those in need and develop programs that improve the quality of life for the most vulnerable.'
+      'donations.label':'Your contribution is essential to continue supporting the Latin community in New Zealand, especially our elderly and children. With your donation, we can provide critical assistance to those in need and develop programs that improve the quality of life for the most vulnerable.',
+      'sponsors.title':'Sponsors'
     },
     es: {
       'nav.home': 'Noticias',
@@ -86,7 +87,8 @@ export const languages = {
       'donations.browser.title':'Donaciones',
       'donations.title':'Donaciones',
       'donations.bankaccountnumber':'Cuenta Bancaria',
-      'donations.label':'Tu contribución es esencial para continuar apoyando a la comunidad latina en Nueva Zelanda, especialmente a nuestros abuelos y niños. Con tu donación, podemos brindar asistencia crucial a quienes lo necesitan y desarrollar programas que mejoren la calidad de vida de los más vulnerables.'
+      'donations.label':'Tu contribución es esencial para continuar apoyando a la comunidad latina en Nueva Zelanda, especialmente a nuestros abuelos y niños. Con tu donación, podemos brindar asistencia crucial a quienes lo necesitan y desarrollar programas que mejoren la calidad de vida de los más vulnerables.',
+      'sponsors.title':'Patronicadores'
     },
   } as const;
 

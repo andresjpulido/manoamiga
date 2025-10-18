@@ -8,6 +8,7 @@ import FormattedDate from "../components/FormattedDate.astro";
 import Linksbar from "../components/linksbar.astro";
 import Followus from "../components/Followus.astro"
 import { getLangFromUrl } from '../i18n/utils';
+import Sponsors from "../components/sponsors.astro";
 
 const lang = getLangFromUrl(Astro.url);
 
@@ -44,6 +45,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
       </div> 
       <aside class="md:col-span-1">
         <Followus />
+        <Sponsors />
         <Linksbar />
       </aside>
     </div>
